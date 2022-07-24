@@ -209,12 +209,14 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="mailto:nikitarwt789@gmail.com" method="POST" enctype="multipart/form-data"
-                    name="EmailForm" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
+                <form action="https://formsubmit.co/nikitarwt789@gmail.com" method="POST" class="contact__form">
+                    <input type="hidden" name="_subject" value="New email woooo!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://nikitarawat.site/thankyou.html">
+                    <input type="text" placeholder="Name" class="contact__input" name="name" required>
+                    <input type="email" placeholder="Email" class="contact__input" name="email" required>
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <button type="submit" class="contact__input button">Enviar</button>
                 </form>
             </div>
         </section>
